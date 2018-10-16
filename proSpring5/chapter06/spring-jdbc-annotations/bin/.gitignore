@@ -1,4 +1,6 @@
 /com/
 /db/
+/logback-test.xml
 /logback.xml
 /spring/
+/sql/

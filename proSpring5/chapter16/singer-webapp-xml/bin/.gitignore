@@ -1,4 +1,5 @@
 /com/
 /logback.xml
-/msf.properties
 /spring/
+/sql/
+/standard.properties

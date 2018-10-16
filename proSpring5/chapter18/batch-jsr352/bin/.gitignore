@@ -1,5 +1,4 @@
 /META-INF/
 /com/
-/db/
 /logback.xml
-/spring/
+/support/
