@@ -1,0 +1,9 @@
+ö20:46:56.000 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@456a70d2: startup date [Tue Oct 16 20:46:55 CEST 2018]; root of context hierarchy
+3 --> HelloWorldMessageProvider: constructor caled
+5 --> StandardOutMessageRenderer: constructor called
+7 --> StandardOutMessageRenderer: setting the provider
+ë20:46:56.282 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1190ab56: startup date [Tue Oct 16 20:46:56 CEST 2018]; root of context hierarchy
+•20:46:56.293 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
+3 --> HelloWorldMessageProvider: constructor caled
+5 --> StandardOutMessageRenderer: constructor called
+7 --> StandardOutMessageRenderer: setting the provider

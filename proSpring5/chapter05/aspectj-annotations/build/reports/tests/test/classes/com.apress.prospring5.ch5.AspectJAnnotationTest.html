@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.apress.prospring5.ch5.AspectJAnnotationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.apress.prospring5.ch5.AspectJAnnotationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.apress.prospring5.ch5.html">com.apress.prospring5.ch5</a> &gt; AspectJAnnotationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.931s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">configTest</td>
+<td>0.062s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">xmlTest</td>
+<td>0.869s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aspectj-annotations/build/resources/test/logback.xml]
+20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aop-hello-world/build/libs/aop-hello-world-5.0-SNAPSHOT.jar!/logback.xml]
+20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aspectj-annotations/build/resources/test/logback.xml]
+20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter02/hello-world/build/libs/hello-world-5.0-SNAPSHOT.jar!/logback.xml]
+20:47:10,050 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+20:47:10,052 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+20:47:10,061 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+20:47:10,061 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+20:47:10,061 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:47:10,061 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+20:47:10,066 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch5] to DEBUG
+20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating DEBUG level on Logger[com.apress.prospring5.ch5] onto the JUL framework
+20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
+20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+20:47:10,103 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+20:47:10,104 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+20:47:10,104 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@456a70d2 - Registering current configuration as safe fallback point
+
+sing: Gravity is working against me
+And gravity wants to bring me down
+Before execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+Executing: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+play: G C G C Am D7
+After execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+talk
+sing: Gravity is working against me
+And gravity wants to bring me down
+Before execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+Executing: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+play: G C G C Am D7
+After execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+talk
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.3</a> at 16-ott-2018 20.47.10</p>
+</div>
+</div>
+</body>
+</html>

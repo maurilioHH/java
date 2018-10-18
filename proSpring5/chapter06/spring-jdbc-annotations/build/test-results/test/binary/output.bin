@@ -1,0 +1,342 @@
+ö20:47:31.320 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@28dad32a: startup date [Tue Oct 16 20:47:31 CEST 2018]; root of context hierarchy
+®20:47:31.448 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:31.449 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:31.695 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+x20:47:31.724 [Test worker] DEBUG c.a.p.c.UpdateSinger - SQL operation not compiled before execution - invoking compile
+À20:47:31.724 [Test worker] DEBUG c.a.p.c.UpdateSinger - RdbmsOperation with SQL [update singer set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id] compiled
+W20:47:31.728 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL update
+À20:47:31.729 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [update singer set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id]
+e20:47:31.734 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ó20:47:33.839 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@28dad32a: startup date [Tue Oct 16 20:47:31 CEST 2018]; root of context hierarchy
+ö20:47:33.844 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a209e65: startup date [Tue Oct 16 20:47:33 CEST 2018]; root of context hierarchy
+®20:47:33.870 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:33.870 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:33.895 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+|20:47:33.908 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+™20:47:33.908 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from singer] compiled
+V20:47:33.933 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+•20:47:33.934 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from singer]
+e20:47:33.938 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ó20:47:35.996 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a209e65: startup date [Tue Oct 16 20:47:33 CEST 2018]; root of context hierarchy
+ö20:47:35.996 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@676f14b1: startup date [Tue Oct 16 20:47:35 CEST 2018]; root of context hierarchy
+®20:47:36.035 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:36.039 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:36.112 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+x20:47:36.129 [Test worker] DEBUG c.a.p.c.InsertSinger - SQL operation not compiled before execution - invoking compile
+Á20:47:36.129 [Test worker] DEBUG c.a.p.c.InsertSinger - RdbmsOperation with SQL [insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)] compiled
+k20:47:36.130 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing SQL update and returning generated keys
+Á20:47:36.132 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)]
+e20:47:36.132 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ó20:47:38.137 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@676f14b1: startup date [Tue Oct 16 20:47:35 CEST 2018]; root of context hierarchy
+ö20:47:38.141 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb803a4: startup date [Tue Oct 16 20:47:38 CEST 2018]; root of context hierarchy
+®20:47:38.160 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:38.161 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:38.184 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+V20:47:38.194 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+w20:47:38.194 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select getfirstnamebyid(?)]
+e20:47:38.194 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ó20:47:40.217 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb803a4: startup date [Tue Oct 16 20:47:38 CEST 2018]; root of context hierarchy
+õ20:47:40.220 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14a75ed: startup date [Tue Oct 16 20:47:40 CEST 2018]; root of context hierarchy
+®20:47:40.249 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:40.249 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:40.266 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+ƒ20:47:40.285 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - SQL operation not compiled before execution - invoking compile
+¿20:47:40.286 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from singer where first_name = :first_name] compiled
+V20:47:40.286 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+´20:47:40.286 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from singer where first_name = :first_name]
+e20:47:40.286 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ò20:47:42.290 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@14a75ed: startup date [Tue Oct 16 20:47:40 CEST 2018]; root of context hierarchy
+ö20:47:42.294 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4482d1ff: startup date [Tue Oct 16 20:47:42 CEST 2018]; root of context hierarchy
+®20:47:42.318 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+˜20:47:42.319 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+†20:47:42.338 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+x20:47:42.348 [Test worker] DEBUG c.a.p.c.InsertSinger - SQL operation not compiled before execution - invoking compile
+Á20:47:42.348 [Test worker] DEBUG c.a.p.c.InsertSinger - RdbmsOperation with SQL [insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)] compiled
+k20:47:42.349 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing SQL update and returning generated keys
+Á20:47:42.351 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)]
+e20:47:42.352 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+ó20:47:44.356 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4482d1ff: startup date [Tue Oct 16 20:47:42 CEST 2018]; root of context hierarchy
+	™20:47:44.366 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/datasource-dbcp.xml]
+	ç20:47:44.502 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@5fac2f63: startup date [Tue Oct 16 20:47:44 CEST 2018]; root of context hierarchy
+	X20:47:46.547 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
+	\java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
+	
+	ƒThe last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+	i	at org.apache.commons.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:2291)
+	Z	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:2038)
+	W	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1533)
+	Q	at com.apress.prospring5.ch6.DbConfigTest.testDataSource(DbConfigTest.java:56)
+	J	at com.apress.prospring5.ch6.DbConfigTest.testOne(DbConfigTest.java:37)
+	A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	6	at java.lang.reflect.Method.invoke(Method.java:498)
+	Z	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	Y	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	X	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	W	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	C	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	A	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	E	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	G	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	E	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	F	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	?	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	v	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	p	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	{	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	u	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	6	at java.lang.reflect.Method.invoke(Method.java:498)
+	Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	<	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	c	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	6	at java.lang.reflect.Method.invoke(Method.java:498)
+	Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	+	at java.lang.Thread.run(Thread.java:748)
+	]Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+	
+	‚The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	\	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	h	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	L	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	F	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	K	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	S	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	h	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:39)
+	g	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:256)
+	c	at org.apache.commons.dbcp2.BasicDataSource.validateConnectionFactory(BasicDataSource.java:2301)
+	i	at org.apache.commons.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:2287)
+		... 50 common frames omitted
+	_Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+	
+	‚The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	K	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	b	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	j	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	E	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	]	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	]	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	^	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	l	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	[	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+	G	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+	R	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	L	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+		... 57 common frames omitted
+	CCaused by: java.net.ConnectException: Connection refused: connect
+	?	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	W	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	R	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	Y	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	P	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	@	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	@	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	.	at java.net.Socket.connect(Socket.java:589)
+	X	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+	[	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+		... 60 common frames omitted
+	ä20:47:46.549 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@5fac2f63: startup date [Tue Oct 16 20:47:44 CEST 2018]; root of context hierarchy
+	
+ö20:47:46.552 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@28559877: startup date [Tue Oct 16 20:47:46 CEST 2018]; root of context hierarchy
+	
+œ20:47:46.583 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://localhost:3306/musicdb?useSSL=true]
+	
+X20:47:48.606 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
+	
+Rcom.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+	
+
+	
+‚The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	
+\	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	
+h	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	
+L	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	
+F	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	
+K	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	
+S	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	
+y	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:143)
+	
+‡	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	
+}	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	
+Q	at com.apress.prospring5.ch6.DbConfigTest.testDataSource(DbConfigTest.java:56)
+	
+J	at com.apress.prospring5.ch6.DbConfigTest.testTwo(DbConfigTest.java:48)
+	
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+	
+Z	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	
+Y	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	
+X	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	
+W	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	
+C	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	
+W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	
+W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	
+A	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	
+E	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	
+G	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	
+E	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	
+F	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	
+?	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	
+v	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	
+p	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	
+{	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	
+u	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+	
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	
+<	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	
+c	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	
+A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	
+S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	
+[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	
+6	at java.lang.reflect.Method.invoke(Method.java:498)
+	
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	
+’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	
+’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	
+Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	
+l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	
+[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	
+U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	
+U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	
+k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	
++	at java.lang.Thread.run(Thread.java:748)
+	
+_Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+	
+
+	
+‚The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	
+K	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	
+b	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	
+j	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	
+E	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	
+]	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	
+]	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	
+^	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	
+l	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	
+[	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+	
+G	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+	
+R	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	
+L	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	
+	... 54 common frames omitted
+	
+CCaused by: java.net.ConnectException: Connection refused: connect
+	
+?	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	
+W	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	
+R	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	
+Y	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	
+P	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	
+@	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	
+@	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	
+.	at java.net.Socket.connect(Socket.java:589)
+	
+X	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+	
+[	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+	
+	... 57 common frames omitted
+	
+ó20:47:48.608 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@28559877: startup date [Tue Oct 16 20:47:46 CEST 2018]; root of context hierarchy

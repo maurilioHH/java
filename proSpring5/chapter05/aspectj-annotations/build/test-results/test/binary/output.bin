@@ -1,0 +1,38 @@
+s20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+q20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+Ø20:47:09,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aspectj-annotations/build/resources/test/logback.xml]
+‡20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+ñ20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aop-hello-world/build/libs/aop-hello-world-5.0-SNAPSHOT.jar!/logback.xml]
+Ù20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter05/aspectj-annotations/build/resources/test/logback.xml]
+é20:47:10,000 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/maurilio-pc/git/java/proSpring5/chapter02/hello-world/build/libs/hello-world-5.0-SNAPSHOT.jar!/logback.xml]
+j20:47:10,050 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+Æ20:47:10,052 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+“20:47:10,061 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+y20:47:10,061 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+–20:47:10,061 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+g20:47:10,061 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+¶20:47:10,066 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+ˆ20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch5] to DEBUG
+¨20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating DEBUG level on Logger[com.apress.prospring5.ch5] onto the JUL framework
+€20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
+ 20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+t20:47:10,103 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+’20:47:10,103 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@55e543d4 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+€20:47:10,103 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+h20:47:10,104 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+‹20:47:10,104 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@456a70d2 - Registering current configuration as safe fallback point
+
+$sing: Gravity is working against me
+$And gravity wants to bring me down
+SBefore execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+LExecuting: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+play: G C G C Am D7
+RAfter execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+talk
+$sing: Gravity is working against me
+$And gravity wants to bring me down
+SBefore execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+LExecuting: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+play: G C G C Am D7
+RAfter execution: com.apress.prospring5.ch5.GrammyGuitarist sing argument: Gibson
+talk

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Specification-Title: Pro Spring 5
+Class-Path: spring-context-5.0.4.BUILD-SNAPSHOT.jar spring-jdbc-5.0.4.
+ BUILD-SNAPSHOT.jar jcl-over-slf4j-1.7.25.jar logback-classic-1.2.3.ja
+ r commons-dbcp2-2.1.jar commons-lang3-3.5.jar mysql-connector-java-6.
+ 0.6.jar spring-aop-5.0.4.BUILD-SNAPSHOT.jar spring-tx-5.0.4.BUILD-SNA
+ PSHOT.jar spring-beans-5.0.4.BUILD-SNAPSHOT.jar spring-expression-5.0
+ .4.BUILD-SNAPSHOT.jar spring-core-5.0.4.BUILD-SNAPSHOT.jar slf4j-api-
+ 1.7.25.jar logback-core-1.2.3.jar commons-pool2-2.3.jar commons-loggi
+ ng-1.2.jar spring-jcl-5.0.4.BUILD-SNAPSHOT.jar
+Created-By: Iuliana Cosmina
+Main-Class: com.apress.prospring5.ch6.PlainJdbcDemo
+
