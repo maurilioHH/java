@@ -4,8 +4,10 @@ subprojects {
 
 	/*Task that copies all the dependencies under build/libs */
 	task copyDependencies(type: Copy) {
+		println('--> start copyDependencies')
 		from configurations.compile
 		into 'build/libs'
+		println('---> end copyDependencies')
 	}
 
 	dependencies {
