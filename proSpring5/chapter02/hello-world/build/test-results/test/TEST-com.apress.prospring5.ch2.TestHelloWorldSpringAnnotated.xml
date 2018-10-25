@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-24T17:52:12" hostname="DESKTOP-5NR5OME" time="0.5">
+<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-25T18:21:12" hostname="DESKTOP-5NR5OME" time="0.519">
   <properties/>
-  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" time="0.5"/>
-  <system-out><![CDATA[19:52:12.714 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Wed Oct 24 19:52:12 CEST 2018]; root of context hierarchy
+  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" time="0.519"/>
+  <system-out><![CDATA[20:21:12.445 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Thu Oct 25 20:21:12 CEST 2018]; root of context hierarchy
  --> HelloWorldMessageProvider: constructor caled
  --> StandardOutMessageRenderer: constructor called
  --> StandardOutMessageRenderer: setting the provider

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringDI" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-24T17:52:12" hostname="DESKTOP-5NR5OME" time="0.098">
+<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringDI" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-25T18:21:12" hostname="DESKTOP-5NR5OME" time="0.099">
   <properties/>
-  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringDI" time="0.098"/>
-  <system-out><![CDATA[19:52:12.981 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@159f40c1: startup date [Wed Oct 24 19:52:12 CEST 2018]; root of context hierarchy
-19:52:12.989 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
+  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringDI" time="0.099"/>
+  <system-out><![CDATA[20:21:12.724 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@159f40c1: startup date [Thu Oct 25 20:21:12 CEST 2018]; root of context hierarchy
+20:21:12.733 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
  --> HelloWorldMessageProvider: constructor caled
  --> StandardOutMessageRenderer: constructor called
  --> StandardOutMessageRenderer: setting the provider
