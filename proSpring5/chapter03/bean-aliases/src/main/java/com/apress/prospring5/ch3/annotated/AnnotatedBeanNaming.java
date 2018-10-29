@@ -14,7 +14,6 @@ public class AnnotatedBeanNaming {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context-annotated.xml");
 		ctx.refresh();
-
 		Map<String,Singer> beans = ctx.getBeansOfType(Singer.class);
 		beans.entrySet().stream().forEach(b ->
 				System.out.println(
