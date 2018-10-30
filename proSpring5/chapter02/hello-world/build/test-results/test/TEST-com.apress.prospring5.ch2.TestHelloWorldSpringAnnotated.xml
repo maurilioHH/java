@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-19T13:21:00" hostname="maurilio-nuc" time="0.666">
+<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-23T11:37:45" hostname="maurilio-nuc" time="0.725">
   <properties/>
-  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" time="0.666"/>
-  <system-out><![CDATA[14:21:00.364 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@456a70d2: startup date [Fri Oct 19 14:21:00 BST 2018]; root of context hierarchy
-=======
-<testsuite name="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-19T18:29:43" hostname="DESKTOP-5NR5OME" time="0.488">
-  <properties/>
-  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" time="0.488"/>
-  <system-out><![CDATA[20:29:43.389 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Fri Oct 19 20:29:43 CEST 2018]; root of context hierarchy
->>>>>>> ee6e7f8cc9d7234f6b202c3bdd7130c769b89ad7
+  <testcase name="testHello" classname="com.apress.prospring5.ch2.TestHelloWorldSpringAnnotated" time="0.725"/>
+  <system-out><![CDATA[12:37:46.029 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Tue Oct 23 12:37:46 BST 2018]; root of context hierarchy
  --> HelloWorldMessageProvider: constructor caled
  --> StandardOutMessageRenderer: constructor called
  --> StandardOutMessageRenderer: setting the provider
