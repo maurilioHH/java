@@ -4,6 +4,9 @@ subprojects {
 
 	/*Task that copies all the dependencies under build/libs */
 	task copyDependencies(type: Copy) {
+		doLast {
+			println "--> copyDependencies"
+		}
 		from configurations.compile
 		into 'build/libs'
 	}
