@@ -10,9 +10,7 @@ public class DeclareSpringComponents
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context-annotation.xml");
 		ctx.refresh();
-
 		MessageProvider messageProvider = ctx.getBean("provider", MessageProvider.class);
-
 		System.out.println(messageProvider.getMessage());
 		ctx.close();
 
