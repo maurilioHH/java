@@ -6,10 +6,11 @@ public class ConfigurableMessageProvider implements MessageProvider {
 	private String message = "Default message";
 
 	public ConfigurableMessageProvider() {
-
+		System.out.println("empty constructor");
 	}
 
 	public ConfigurableMessageProvider(String message) {
+		System.out.println("ConfigurableMessageProvider(String) constructor");
 		this.message = message;
 	}
 
