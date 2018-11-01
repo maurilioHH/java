@@ -5,10 +5,10 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 /**
  * Created by iuliana.cosmina on 2/15/17.
  */
-public class FieldInjection {
-
-	public static void main(String... args) {
-
+public class FieldInjection
+{
+	public static void main(String... args)
+	{
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context.xml");
 		ctx.refresh();
