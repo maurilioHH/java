@@ -7,12 +7,12 @@ public class ConstructorConfusion {
 	private String someValue;
 
 	public ConstructorConfusion(String someValue) {
-		System.out.println("ConstructorConfusion(String) called");
+		System.out.println("ConstructorConfusion(String) constructor");
 		this.someValue = someValue;
 	}
 
 	public ConstructorConfusion(int someValue) {
-		System.out.println("ConstructorConfusion(int) called");
+		System.out.println("ConstructorConfusion(int) constructor");
 		this.someValue = "Number: " + Integer.toString(someValue);
 	}
 
