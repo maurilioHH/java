@@ -2,7 +2,8 @@ package com.apress.prospring5.ch3.xml;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-public class InjectSimple {
+public class InjectSimple
+{
 
 	private String name;
 	private int age;
@@ -10,42 +11,43 @@ public class InjectSimple {
 	private boolean programmer;
 	private Long ageInSeconds;
 
-	public static void main(String... args) {
+	public static void main(String... args)
+	{
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context-simple-xml.xml");
 		ctx.refresh();
-
 		InjectSimple simple = (InjectSimple) ctx.getBean("injectSimple");
 		System.out.println(simple);
-
 		ctx.close();
 	}
 
-	public void setAgeInSeconds(Long ageInSeconds) {
+	public void setAgeInSeconds(Long ageInSeconds)
+	{
 		this.ageInSeconds = ageInSeconds;
 	}
 
-	public void setProgrammer(boolean programmer) {
+	public void setProgrammer(boolean programmer)
+	{
 		this.programmer = programmer;
 	}
 
-	public void setAge(int age) {
+	public void setAge(int age)
+	{
 		this.age = age;
 	}
 
-	public void setHeight(float height) {
+	public void setHeight(float height)
+	{
 		this.height = height;
 	}
 
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
-	public String toString() {
-		return "Name: " + name + "\n"
-				+ "Age: " + age + "\n"
-				+ "Age in Seconds: " + ageInSeconds + "\n"
-				+ "Height: " + height + "\n"
-				+ "Is Programmer?: " + programmer;
+	public String toString()
+	{
+		return "Name: " + name + "\n" + "Age: " + age + "\n" + "Age in Seconds: " + ageInSeconds + "\n" + "Height: " + height + "\n" + "Is Programmer?: " + programmer;
 	}
 }
