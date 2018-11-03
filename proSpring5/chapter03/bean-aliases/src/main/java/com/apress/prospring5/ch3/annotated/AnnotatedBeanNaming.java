@@ -18,6 +18,5 @@ public class AnnotatedBeanNaming
 		Map<String, Singer> beans = ctx.getBeansOfType(Singer.class);
 		beans.entrySet().stream().forEach(b -> System.out.println("id: " + b.getKey() + "\n aliases: " + Arrays.toString(ctx.getAliases(b.getKey())) + "\n"));
 		ctx.close();
-		
 	}
 }
