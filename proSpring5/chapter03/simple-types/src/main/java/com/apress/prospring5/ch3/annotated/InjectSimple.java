@@ -25,7 +25,6 @@ public class InjectSimple {
 
 		InjectSimple simple = (InjectSimple) ctx.getBean("injectSimple");
 		System.out.println(simple);
-		
 
 		ctx.close();
 	}
