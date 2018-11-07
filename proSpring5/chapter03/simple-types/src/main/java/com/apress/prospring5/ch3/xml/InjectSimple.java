@@ -4,7 +4,6 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class InjectSimple
 {
-
 	private String name;
 	private int age;
 	private float height;
