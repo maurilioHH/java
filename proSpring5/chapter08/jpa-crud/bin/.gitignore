@@ -1,2 +1,4 @@
-/spring/
 /db/
+/com/
+/logback.xml
+/spring/
