@@ -26,7 +26,7 @@ public class CollectionInjection {
 	}
 
 	public void displayInfo() {
-		System.out.println("Map contents:\n");
+		System.out.println("\nMap contents:\n");
 		map.entrySet().stream().forEach(e -> System.out.println("Key: " + e.getKey() + " - Value: " + e.getValue()));
 
 		System.out.println("\nProperties contents:\n");
@@ -37,6 +37,7 @@ public class CollectionInjection {
 
 		System.out.println("\nList contents:\n");
 		list.forEach(obj -> System.out.println("Value: " + obj));
+		System.out.println("\n");
 	}
 
 	public void setList(List list) {
