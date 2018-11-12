@@ -3,9 +3,11 @@ package com.apress.prospring5.ch3;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.util.StopWatch;
 
-public class LookupDemo {
+public class LookupDemo
+{
 
-	public static void main(String... args) {
+	public static void main(String... args)
+	{
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context-xml.xml");
 		ctx.refresh();
@@ -19,17 +21,19 @@ public class LookupDemo {
 		ctx.close();
 	}
 
-	public static void displayInfo(String beanName, DemoBean bean) {
+	public static void displayInfo(String beanName, DemoBean bean)
+	{
 		Singer singer1 = bean.getMySinger();
 		Singer singer2 = bean.getMySinger();
 
-		System.out.println("[" + beanName + "]: Singer Instances the Same?  "
-				+ (singer1 == singer2));
-
+		System.out.println("[" + beanName + "]: Singer Instances the Same?  " + (singer1 == singer2));
+		System.out.println("[" + bean + "]");
+		
 		StopWatch stopWatch = new StopWatch();
 		stopWatch.start("lookupDemo");
 
-		for (int x = 0; x < 100000; x++) {
+		for (int x = 0; x < 100000; x++)
+		{
 			Singer singer = bean.getMySinger();
 			singer.sing();
 		}
