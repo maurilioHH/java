@@ -21,7 +21,7 @@ public class LookupConfigDemo {
 
 	public static void main(String... args) {
 		GenericApplicationContext ctx = new AnnotationConfigApplicationContext(LookupConfig.class);
-		//Arrays.stream(ctx.getBeanDefinitionNames()).forEach(s-> System.out.println(s));
+		Arrays.stream(ctx.getBeanDefinitionNames()).forEach(s-> System.out.println(s));
 
 		DemoBean abstractBean = ctx.getBean("abstractLookupBean", DemoBean.class);
 		DemoBean standardBean = ctx.getBean("standardLookupBean", DemoBean.class);
