@@ -48,13 +48,13 @@ public class Target
 
 		Target t = null;
 
-		System.out.println("Using byName:\n");
+		System.out.println("--> Using byName:");
 		t = (Target) ctx.getBean("targetByName");
 
-		System.out.println("\nUsing byType:\n");
+		System.out.println("\n--> Using byType:");
 		t = (Target) ctx.getBean("targetByType");
 
-		System.out.println("\nUsing constructor:\n");
+		System.out.println("\n-->Using constructor:");
 		t = (Target) ctx.getBean("targetConstructor");
 
 		ctx.close();
