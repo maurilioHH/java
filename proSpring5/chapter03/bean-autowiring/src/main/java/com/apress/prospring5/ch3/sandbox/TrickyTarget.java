@@ -34,7 +34,7 @@ public class TrickyTarget {
 	@Qualifier("fooImplOne")
 	public void setFooOne(Foo fooOne) {
 		this.fooOne = fooOne;
-		System.out.println("Property fooOne set");
+		System.out.println("Property fooOne set: " + this.fooOne);
 	}
 
 	// comment @Qualifier annotation to cause NoUniqueBeanDefinitionException being thrown at runtime
@@ -43,7 +43,7 @@ public class TrickyTarget {
 	@Qualifier("fooImplTwo")
 	public void setFooTwo(Foo foo) {
 		this.fooTwo = foo;
-		System.out.println("Property fooTwo set");
+		System.out.println("Property fooTwo set: " +  this.fooTwo);
 	}
 
 	@Autowired

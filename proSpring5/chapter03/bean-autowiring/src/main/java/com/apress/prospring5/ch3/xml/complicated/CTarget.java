@@ -41,12 +41,12 @@ public class CTarget {
 	public static void main(String... args) {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		//using primary
-		//ctx.load("classpath:spring/app-context-04.xml");
+		ctx.load("classpath:spring/app-context-04.xml");
 
 		//using qualifier
-		ctx.load("classpath:spring/app-context-05.xml");
+		//ctx.load("classpath:spring/app-context-05.xml");
 		ctx.refresh();
-		System.out.println("\nUsing byType:\n");
+		System.out.println("Using byType:\n");
 		CTarget t = (CTarget) ctx.getBean("targetByType");
 		ctx.close();
 	}
