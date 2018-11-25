@@ -5,9 +5,10 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 /**
  * Created by iuliana.cosmina on 2/25/17.
  */
-public class InheritanceDemo {
-
-	public static void main(String... args) {
+public class InheritanceDemo
+{
+	public static void main(String... args)
+	{
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:spring/app-context-xml.xml");
 		ctx.refresh();
@@ -19,4 +20,4 @@ public class InheritanceDemo {
 		System.out.println("Child:\n" + child);
 	}
 }
-//abstract="true"
+// abstract="true"
