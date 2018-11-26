@@ -13,6 +13,7 @@ public class InheritanceDemo
 		ctx.load("classpath:spring/app-context-xml.xml");
 		ctx.refresh();
 
+		//Se definito come abstract non è possibile ottenere il bean
 		//Singer parent = (Singer) ctx.getBean("parent");
 		Singer child = (Singer) ctx.getBean("child");
 
