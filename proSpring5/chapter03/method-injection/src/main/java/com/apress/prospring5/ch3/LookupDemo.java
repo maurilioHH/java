@@ -26,7 +26,7 @@ public class LookupDemo
 		Singer singer1 = bean.getMySinger();
 		Singer singer2 = bean.getMySinger();
 
-		System.out.println("[" + beanName + "]: Singer Instances the Same?  " + (singer1 == singer2));
+		System.out.println("\n[" + beanName + "]: Singer Instances the Same?  " + (singer1 == singer2));
 		System.out.println("[" + bean + "]");
 		
 		StopWatch stopWatch = new StopWatch();
