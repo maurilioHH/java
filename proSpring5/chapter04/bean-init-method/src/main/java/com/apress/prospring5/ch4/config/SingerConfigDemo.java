@@ -12,15 +12,16 @@ import static com.apress.prospring5.ch4.Singer.getBean;
 /**
  * Created by iuliana.cosmina on 2/26/17.
  */
-public class SingerConfigDemo {
-
+public class SingerConfigDemo
+{
 	@Configuration
-	static class SingerConfig{
-
+	static class SingerConfig
+	{
 		@Lazy
 		@Bean(initMethod = "init")
-		Singer singerOne() {
-			Singer singerOne = 	new Singer();
+		Singer singerOne()
+		{
+			Singer singerOne = new Singer();
 			singerOne.setName("John Mayer");
 			singerOne.setAge(39);
 			return singerOne;
@@ -28,22 +29,25 @@ public class SingerConfigDemo {
 
 		@Lazy
 		@Bean(initMethod = "init")
-		Singer singerTwo() {
-			Singer singerTwo = 	new Singer();
+		Singer singerTwo()
+		{
+			Singer singerTwo = new Singer();
 			singerTwo.setAge(72);
 			return singerTwo;
 		}
 
 		@Lazy
 		@Bean(initMethod = "init")
-		Singer singerThree() {
-			Singer singerThree = 	new Singer();
+		Singer singerThree()
+		{
+			Singer singerThree = new Singer();
 			singerThree.setName("John Butler");
 			return singerThree;
 		}
 	}
 
-	public static void main(String... args) {
+	public static void main(String... args)
+	{
 		GenericApplicationContext ctx = new AnnotationConfigApplicationContext(SingerConfig.class);
 
 		getBean("singerOne", ctx);
