@@ -21,6 +21,7 @@ public class Singer
 		this.age = age;
 	}
 
+	@SuppressWarnings("unused")
 	private void init()
 	{
 		System.out.println("Initializing bean");
