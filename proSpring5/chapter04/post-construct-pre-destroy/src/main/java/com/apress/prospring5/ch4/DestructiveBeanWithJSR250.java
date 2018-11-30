@@ -5,51 +5,55 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-public class DestructiveBeanWithJSR250 {
-    private File file;
-    private String filePath;
-    
-    @PostConstruct
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Initializing Bean");
+public class DestructiveBeanWithJSR250
+{
+	private File file;
+	private String filePath;
 
-        if (filePath == null) {
-            throw new IllegalArgumentException(
-                    "You must specify the filePath property of " + 
-                    DestructiveBeanWithJSR250.class);
-        }
+	@PostConstruct
+	public void afterPropertiesSet() throws Exception
+	{
+		System.out.println("Initializing Bean");
 
-        this.file = new File(filePath);
-        this.file.createNewFile();
+		if (filePath == null)
+		{
+			throw new IllegalArgumentException("You must specify the filePath property of " + DestructiveBeanWithJSR250.class);
+		}
 
-        System.out.println("File exists: " + file.exists());
-    }
+		this.file = new File(filePath);
+		this.file.createNewFile();
 
-    @PreDestroy
-    public void destroy() {
-        System.out.println("Destroying Bean");
+		System.out.println("File exists: " + file.exists());
+	}
 
-        if(!file.delete()) {
-            System.err.println("ERROR: failed to delete file.");
-        }
+	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("Destroying Bean");
 
-        System.out.println("File exists: " + file.exists());
-    }
+		if (!file.delete())
+		{
+			System.err.println("ERROR: failed to delete file.");
+		}
 
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
-    }
+		System.out.println("File exists: " + file.exists());
+	}
 
-    public static void main(String... args) throws Exception {
-        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:spring/app-context-annotation.xml");
-        ctx.refresh(); 
+	public void setFilePath(String filePath)
+	{
+		this.filePath = filePath;
+	}
 
-        DestructiveBeanWithJSR250 bean = 
-            (DestructiveBeanWithJSR250) ctx.getBean("destructiveBean");
+	public static void main(String... args) throws Exception
+	{
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+		ctx.load("classpath:spring/app-context-annotation.xml");
+		ctx.refresh();
 
-        System.out.println("Calling destroy()");
-        ctx.destroy();
-        System.out.println("Called destroy()");
-    }
+		DestructiveBeanWithJSR250 bean = (DestructiveBeanWithJSR250) ctx.getBean("destructiveBean");
+
+		System.out.println("Calling close()");
+		ctx.close();
+		System.out.println("Called close()");
+	}
 }
