@@ -5,45 +5,50 @@ import javax.annotation.PreDestroy;
 import java.io.File;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-public class DestructiveBeanWithInterface {
-    private File file;
-    private String filePath;
-    
-    @PostConstruct
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Initializing Bean");
+public class DestructiveBeanWithInterface
+{
+	private File file;
+	private String filePath;
 
-        if (filePath == null) {
-            throw new IllegalArgumentException(
-                    "You must specify the filePath property of " + 
-                    DestructiveBeanWithInterface.class);
-        }
+	@PostConstruct
+	public void afterPropertiesSet() throws Exception
+	{
+		System.out.println("Initializing Bean");
 
-        this.file = new File(filePath);
-        this.file.createNewFile();
+		if (filePath == null)
+		{
+			throw new IllegalArgumentException("You must specify the filePath property of " + DestructiveBeanWithInterface.class);
+		}
 
-        System.out.println("File exists: " + file.exists());
-    }
+		this.file = new File(filePath);
+		this.file.createNewFile();
 
-    @PreDestroy
-    public void destroy() {
-        System.out.println("Destroying Bean");
+		System.out.println("File exists: " + file.exists());
+	}
 
-        if(!file.delete()) {
-            System.err.println("ERROR: failed to delete file.");
-        }
+	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("Destroying Bean");
 
-        System.out.println("File exists: " + file.exists());
-    }
+		if (!file.delete())
+		{
+			System.err.println("ERROR: failed to delete file.");
+		}
 
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
-    }
+		System.out.println("File exists: " + file.exists());
+	}
 
-    public static void main(String... args) throws Exception {
-        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:spring/app-context-annotation.xml");
-        ctx.refresh();
-        ctx.getBean("destructiveBean", DestructiveBeanWithInterface.class);
-    }
+	public void setFilePath(String filePath)
+	{
+		this.filePath = filePath;
+	}
+
+	public static void main(String... args) throws Exception
+	{
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+		ctx.load("classpath:spring/app-context-annotation.xml");
+		ctx.refresh();
+		ctx.getBean("destructiveBean", DestructiveBeanWithInterface.class);
+	}
 }
