@@ -12,13 +12,13 @@ public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, Ini
 
 	public MessageDigest getObject() throws Exception
 	{
-		System.out.println("\nMessageDigestFactoryBean::getObject()");
+		System.out.println("MessageDigestFactoryBean::getObject()");
 		return messageDigest;
 	}
 
 	public Class<MessageDigest> getObjectType()
 	{
-		System.out.println("\nMessageDigestFactoryBean::getObjectType()");
+		System.out.println("MessageDigestFactoryBean::getObjectType()");
 		return MessageDigest.class;
 	}
 
@@ -29,14 +29,14 @@ public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, Ini
 
 	public void afterPropertiesSet() throws Exception
 	{
-		System.out.println("\nMessageDigestFactoryBean::afterPropertiesSet()");
+		System.out.println("MessageDigestFactoryBean::afterPropertiesSet()");
 		System.out.println("getInstance(...)");
 		messageDigest = MessageDigest.getInstance(algorithmName);
 	}
 
 	public void setAlgorithmName(String algorithmName)
 	{
-		System.out.println("\nsetAlgorithmName(...)");
+		System.out.println("setAlgorithmName::" + algorithmName);
 		this.algorithmName = algorithmName;
 	}
 }
