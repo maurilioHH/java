@@ -10,24 +10,28 @@ import org.springframework.context.support.GenericApplicationContext;
 /**
  * Created by iuliana.cosmina on 3/7/17.
  */
-public class MessageDigesterConfigDemo {
-
+public class MessageDigesterConfigDemo
+{
 	@Configuration
-	static class MessageDigesterConfig {
-
+	static class MessageDigesterConfig
+	{
 		@Bean
-		public MessageDigestFactoryBean shaDigest() {
+		public MessageDigestFactoryBean shaDigest()
+		{
 			MessageDigestFactoryBean factoryOne = new MessageDigestFactoryBean();
 			factoryOne.setAlgorithmName("SHA1");
 			return factoryOne;
 		}
 
 		@Bean
-		public MessageDigestFactoryBean defaultDigest() {
+		public MessageDigestFactoryBean defaultDigest()
+		{
 			return new MessageDigestFactoryBean();
 		}
 
-		@Bean MessageDigester digester() throws Exception {
+		@Bean
+		MessageDigester digester() throws Exception
+		{
 			MessageDigester messageDigester = new MessageDigester();
 			messageDigester.setDigest1(shaDigest().getObject());
 			messageDigester.setDigest2(defaultDigest().getObject());
@@ -35,7 +39,8 @@ public class MessageDigesterConfigDemo {
 		}
 	}
 
-	public static void main(String... args) {
+	public static void main(String... args)
+	{
 		GenericApplicationContext ctx = new AnnotationConfigApplicationContext(MessageDigesterConfig.class);
 
 		MessageDigester digester = (MessageDigester) ctx.getBean("digester");
