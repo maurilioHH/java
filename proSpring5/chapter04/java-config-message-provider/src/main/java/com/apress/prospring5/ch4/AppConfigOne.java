@@ -9,21 +9,24 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 @PropertySource(value = "classpath:message.properties")
-public class AppConfigOne {
+public class AppConfigOne
+{
 
 	@Autowired
 	Environment env;
 
 	@Bean
 	@Lazy
-	public MessageProvider messageProvider() {
+	public MessageProvider messageProvider()
+	{
 		return new ConfigurableMessageProvider(env.getProperty("message"));
 	}
 
 	@Bean(name = "messageRenderer")
-	@Scope(value="prototype")
-	@DependsOn(value="messageProvider")
-	public MessageRenderer messageRenderer() {
+	@Scope(value = "prototype")
+	@DependsOn(value = "messageProvider")
+	public MessageRenderer messageRenderer()
+	{
 		MessageRenderer renderer = new StandardOutMessageRenderer();
 		renderer.setMessageProvider(messageProvider());
 		return renderer;

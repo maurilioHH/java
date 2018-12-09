@@ -13,13 +13,14 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import(AppConfigFour.class)
-public class AppConfigThree {
+public class AppConfigThree
+{
 	@Autowired
 	MessageProvider provider;
 
-
 	@Bean(name = "messageRenderer")
-	public MessageRenderer messageRenderer() {
+	public MessageRenderer messageRenderer()
+	{
 		MessageRenderer renderer = new StandardOutMessageRenderer();
 		renderer.setMessageProvider(provider);
 		return renderer;
