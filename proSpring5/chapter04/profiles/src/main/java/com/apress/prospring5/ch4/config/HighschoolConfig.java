@@ -11,10 +11,11 @@ import org.springframework.context.annotation.Profile;
  */
 @Configuration
 @Profile("highschool")
-public class HighschoolConfig {
-
+public class HighschoolConfig
+{
 	@Bean
-	public FoodProviderService foodProviderService(){
+	public FoodProviderService foodProviderService()
+	{
 		return new FoodProviderServiceImpl();
 	}
 }
