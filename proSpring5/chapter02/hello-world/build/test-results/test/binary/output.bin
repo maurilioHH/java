@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-õ12:37:46.029 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Tue Oct 23 12:37:46 BST 2018]; root of context hierarchy
+õ18:25:12.454 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Sun Dec 16 18:25:12 CET 2018]; root of context hierarchy
 3 --> HelloWorldMessageProvider: constructor caled
 5 --> StandardOutMessageRenderer: constructor called
 7 --> StandardOutMessageRenderer: setting the provider
-ê12:37:46.416 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@159f40c1: startup date [Tue Oct 23 12:37:46 BST 2018]; root of context hierarchy
-•12:37:46.426 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
-=======
-ö20:21:12.445 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fa1d77e: startup date [Thu Oct 25 20:21:12 CEST 2018]; root of context hierarchy
-3 --> HelloWorldMessageProvider: constructor caled
-5 --> StandardOutMessageRenderer: constructor called
-7 --> StandardOutMessageRenderer: setting the provider
-ë20:21:12.724 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@159f40c1: startup date [Thu Oct 25 20:21:12 CEST 2018]; root of context hierarchy
-•20:21:12.733 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
->>>>>>> 6ab413a979c1c15b81b59d0e77154b9bd212c892
+ê18:25:12.798 [Test worker] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@159f40c1: startup date [Sun Dec 16 18:25:12 CET 2018]; root of context hierarchy
+•18:25:12.809 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/app-context.xml]
 3 --> HelloWorldMessageProvider: constructor caled
 5 --> StandardOutMessageRenderer: constructor called
 7 --> StandardOutMessageRenderer: setting the provider

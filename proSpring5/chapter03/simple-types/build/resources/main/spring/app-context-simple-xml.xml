@@ -9,7 +9,7 @@
 
     <bean id="injectSimple" class="com.apress.prospring5.ch3.xml.InjectSimple"
     	p:name="John Mayer"
-        p:age="39"
+        p:age="40"
     	p:height="1.92"
         p:programmer="false"
     	p:ageInSeconds="1241401112"/>
