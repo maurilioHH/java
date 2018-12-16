@@ -19,15 +19,16 @@ public class Application {
 	public static void main(String... args) throws Exception {
 		ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
 		assert (ctx != null);
-		logger.info("The beans you were looking for:");
+		logger.info("========== The beans you were looking for:");
 
 		// listing all bean definition  names
 		Arrays.stream(ctx.getBeanDefinitionNames()).forEach(logger::info);
-
+		logger.info("==========");
 		HelloWorld hw = ctx.getBean(HelloWorld.class);
 		hw.sayHi();
 
-		System.in.read();
+		//System.in.read();
 		ctx.close();
+		logger.info("bye");
 	}
 }

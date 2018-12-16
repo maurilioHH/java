@@ -12,7 +12,7 @@ import java.util.Arrays;
 /**
  * Created by iuliana.cosmina on 3/19/17.
  */
-@SpringBootApplication(scanBasePackageClasses = HelloWorld.class)
+@SpringBootApplication
 public class WebApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(WebApplication.class);
