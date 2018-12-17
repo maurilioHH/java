@@ -13,11 +13,11 @@ import java.util.Arrays;
  * Created by iuliana.cosmina on 3/19/17.
  */
 @SpringBootApplication
-public class WebApplication {
-
+public class WebApplication
+{
 	private static Logger logger = LoggerFactory.getLogger(WebApplication.class);
-
-	public static void main(String... args) throws Exception {
+	public static void main(String... args) throws Exception
+	{
 		ConfigurableApplicationContext ctx = SpringApplication.run(WebApplication.class, args);
 		assert (ctx != null);
 		logger.info("Application started...");
