@@ -6,7 +6,6 @@ public class SecurityDemo
 {
 	public static void main(String... args)
 	{
-		System.out.println();
 		SecurityManager mgr = new SecurityManager();
 		SecureBean bean = getSecureBean();
 
