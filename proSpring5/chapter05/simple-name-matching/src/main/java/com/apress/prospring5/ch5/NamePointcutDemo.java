@@ -6,9 +6,10 @@ import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
 
-public class NamePointcutDemo {
-
-	public static void main(String... args) {
+public class NamePointcutDemo
+{
+	public static void main(String... args)
+	{
 		GrammyGuitarist johnMayer = new GrammyGuitarist();
 
 		NameMatchMethodPointcut pc = new NameMatchMethodPointcut();
