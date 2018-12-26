@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch6.DbConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-12-23T16:35:14" hostname="DESKTOP-5NR5OME" time="4.274">
+<testsuite name="com.apress.prospring5.ch6.DbConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-12-26T18:51:45" hostname="DESKTOP-5NR5OME" time="4.293">
   <properties/>
-  <testcase name="testOne" classname="com.apress.prospring5.ch6.DbConfigTest" time="2.23"/>
-  <testcase name="testTwo" classname="com.apress.prospring5.ch6.DbConfigTest" time="2.044"/>
-  <system-out><![CDATA[17:35:14.554 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/datasource-dbcp.xml]
-17:35:14.717 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@7c2424d5: startup date [Sun Dec 23 17:35:14 CET 2018]; root of context hierarchy
-17:35:16.770 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
+  <testcase name="testOne" classname="com.apress.prospring5.ch6.DbConfigTest" time="2.246"/>
+  <testcase name="testTwo" classname="com.apress.prospring5.ch6.DbConfigTest" time="2.047"/>
+  <system-out><![CDATA[19:51:45.615 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/datasource-dbcp.xml]
+19:51:45.760 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@7c2424d5: startup date [Wed Dec 26 19:51:45 CET 2018]; root of context hierarchy
+19:51:47.846 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
 java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
@@ -103,10 +103,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
 	... 61 common frames omitted
-17:35:16.772 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@7c2424d5: startup date [Sun Dec 23 17:35:14 CET 2018]; root of context hierarchy
-17:35:16.775 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5d6749ba: startup date [Sun Dec 23 17:35:16 CET 2018]; root of context hierarchy
-17:35:16.812 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://localhost:3306/musicdb?useSSL=true]
-17:35:18.815 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
+19:51:47.850 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@7c2424d5: startup date [Wed Dec 26 19:51:45 CET 2018]; root of context hierarchy
+19:51:47.850 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5d6749ba: startup date [Wed Dec 26 19:51:47 CET 2018]; root of context hierarchy
+19:51:47.889 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://localhost:3306/musicdb?useSSL=true]
+19:51:49.896 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -196,7 +196,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
 	... 58 common frames omitted
-17:35:18.817 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5d6749ba: startup date [Sun Dec 23 17:35:16 CET 2018]; root of context hierarchy
+19:51:49.896 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5d6749ba: startup date [Wed Dec 26 19:51:47 CET 2018]; root of context hierarchy
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
