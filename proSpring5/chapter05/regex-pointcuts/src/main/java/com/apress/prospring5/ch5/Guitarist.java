@@ -7,7 +7,8 @@ import com.apress.prospring5.ch2.common.Singer;
  */
 public class Guitarist implements Singer {
 
-	@Override public void sing() {
+	@Override 
+	public void sing() {
 		System.out.println("Just keep me where the light is");
 	}
 
