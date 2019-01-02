@@ -22,5 +22,6 @@ public class WebApplication
 
 		System.in.read();
 		ctx.close();
+		logger.info("Application completed...");
 	}
 }

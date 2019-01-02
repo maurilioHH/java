@@ -10,7 +10,7 @@
 	<aop:config>
 		<aop:pointcut id="singExecution" expression="execution(* com.apress.prospring5.ch5..sing*(com.apress.prospring5.ch2.common.Guitar))" />
 		<aop:aspect ref="advice">
-			<aop:after pointcut-ref="singExecution" method="simpleBeforeAdvice" />
+			<aop:before pointcut-ref="singExecution" method="simpleBeforeAdvice" />
 		</aop:aspect>
 	</aop:config>
 
